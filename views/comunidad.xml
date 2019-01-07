@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="agenda_comunidad_action" name="comunidad"
+                     res_model="tiposdatos.tdatos" />
+
+
+
+
+        <menuitem name="Tipos datos" id="menu_agenda" sequence="10" />
+        <menuitem name="Inicio" id="menu_inicio" parent="menu_agenda" sequence="10"/>
+        <menuitem name="tipos datos" id="menu_comunidad" action="agenda_comunidad_action" parent="menu_inicio" sequence="10"/>
+
+
+        <record id="agenda_comunidad_view_tree" model="ir.ui.view">
+            <field name="name">Tipos de datos</field>
+            <field name="model">tiposdatos.tdatos</field>
+            <field name="arch" type="xml">
+
+                <tree>
+
+                    <field name="char" />
+                    <field name="texto" />
+                    <field name="boolean" />
+                    <field name="html" />
+                    <field name="float_field" />
+                    <field name="date" />
+                    <field name="fecha_actual" />
+                    <field name="datetime_field" />
+                    <field name="selection" />
+
+
+
+
+
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="agenda_comunidad_view_form" model="ir.ui.view">
+            <field name="name">Tipos de datos</field>
+            <field name="model">tiposdatos.tdatos</field>
+            <field name="arch" type="xml">
+                <form>
+
+                    <group>
+                    <field name="char" />
+                    <field name="texto" />
+                    <field name="boolean" />
+                    <field name="html" />
+                    <field name="float_field" />
+                    <field name="date" />
+                    <field name="fecha_actual" />
+                    <field name="datetime_field" />
+                    <field name="selection" />
+
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="agenda_comunidad_view_search" model="ir.ui.view">
+            <field name="name">Tipos de datos</field>
+            <field name="model">tiposdatos.tdatos</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="char" />
+                    <field name="texto" />
+                    <field name="boolean" />
+                    <field name="html" />
+                    <field name="float_field" />
+                    <field name="date" />
+                    <field name="fecha_actual" />
+                    <field name="datetime_field" />
+                    <field name="selection" />
+
+
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>
