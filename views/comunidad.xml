@@ -54,6 +54,7 @@
                     <field name="fecha_actual" />
                     <field name="datetime_field" />
                     <field name="selection" />
+                    <field name="imagen" widget="image" />
 
                     </group>
                 </form>
@@ -74,6 +75,7 @@
                     <field name="fecha_actual" />
                     <field name="datetime_field" />
                     <field name="selection" />
+                    <field name="imagen" widget="image" />
 
 
                 </search>
