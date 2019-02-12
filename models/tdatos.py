@@ -18,6 +18,10 @@ class Tdatos(models.Model):
     datetime_field = fields.Datetime('datetime')
     fecha_actual = fields.Date(string='Fecha actual', default=lambda s: fields.Date.context_today(s))
     selection = fields.Selection(selection=month_selection, string='Mes',default=datetime.now().month, required=True)
+    imagen = fields.Binary("Imagen",Help="Seleccionar Imagen")
+
+
+
 
 
 
